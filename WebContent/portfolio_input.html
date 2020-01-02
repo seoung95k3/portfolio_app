@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+  <h1>포트폴리오 등록</h1>
+  <form method="post"  enctype="multipart/form-data" action="portfolio_register.do">
+	<table border="1">
+		<tr>
+			<td>제목</td>
+			<td><input type="text" name="title"></td>
+		</tr>
+		<tr>
+			<td>대표자</td>
+			<td><input type="text" name="leader"></td>
+		</tr>
+		<tr>
+			<td>참여자</td>
+			<td><input type="text" name="member" placeholder="참여자의 명단을 ,로 구분해서 입력"></td>
+		</tr>
+		<tr>
+			<td>내용</td>
+			<td><textarea name="content"></textarea></td>
+		</tr>		
+		<tr>
+			<td>시작일</td>
+			<td><input type="date" name="startDate"/></td>
+		</tr>		
+		<tr>
+			<td>종료일</td>
+			<td><input type="date" name="endDate"/></td>
+		</tr>		
+		<tr>
+			<td>자료 파일1</td>
+			<td><input type="file" name="dataFile1"></td>
+		</tr>
+		<tr>
+			<td>자료 파일2</td>
+			<td><input type="file" name="dataFile2"></td>
+		</tr>
+		<tr>
+			<td>자료 파일3</td>
+			<td><input type="file" name="dataFile3"></td>
+		</tr>
+		<tr>
+			<td>자료 파일4</td>
+			<td><input type="file" name="dataFile4"></td>
+		</tr>
+		<tr>
+			<td colspan="2"  align="center">
+				<input type="submit" name="등록">
+				<input type="reset" name="취소">
+			</td>
+		</tr>
+ 	</table>
+  </form>	
+</body>
+</html>
